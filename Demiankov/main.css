@@ -1,0 +1,85 @@
+html, body {
+    font-family: Arial, Helvectiva, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    background-color: white;
+    position: relative;
+    font-style: normal;
+}
+
+body {
+    background: url("./images/background.jpg");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    justify-content: space-around;
+}
+.navbar > .middle {
+    flex-direction: column;
+}
+.navbar > .middle > h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 2px aqua, 0 0 1em blue ;
+}
+.navbar > .right {
+    width: auto;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.menu {
+    padding: 0;
+}
+.menu > li {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.7rem;
+    list-style: none;
+    margin: 0;
+    background-color: #dce9f5;
+    border: #8fbce2 solid 1px;
+}
+.menu > li > a {
+    text-decoration: none;
+    color: black;
+}
+.menu > li.active {
+    background: #f1f6fd;
+}
+.menu > li:last-child {
+    border-radius: 0 15px 15px 0;
+}
+.menu > li:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+}
+main > .left {
+    padding-left: 7rem;
+    font-size: 3rem;
+}
+main > .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+main > .right > img {
+    width: 30vw;
+    padding-bottom: 3rem;
+}
